@@ -1,0 +1,834 @@
+[
+  {
+    "value": "Питомец"
+  },
+  {
+    "value": "Критерии выбора",
+    "connections": [
+      {
+        "type": "influences",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Бюджет"
+  },
+  {
+    "value": "<1000",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Бюджет"
+      }
+    ]
+  },
+  {
+    "value": "1000-5000",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Бюджет"
+      }
+    ]
+  },
+  {
+    "value": "5000-10000",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Бюджет"
+      }
+    ]
+  },
+  {
+    "value": "Среда обитания"
+  },
+  {
+    "value": "Аквариум",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Среда обитания"
+      }
+    ]
+  },
+  {
+    "value": "Дом или двор",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Среда обитания"
+      }
+    ]
+  },
+  {
+    "value": "Клетка",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Среда обитания"
+      }
+    ]
+  },
+  {
+    "value": "Вольер",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Среда обитания"
+      }
+    ]
+  },
+  {
+    "value": "Террариум",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Среда обитания"
+      }
+    ]
+  },
+  {
+    "value": "Улитка",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "<1000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Аквариум"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Важна простота в уходе"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер спокойный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Рыбки",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "<1000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Аквариум"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Не важна простота в уходе"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер спокойный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Кролик",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "<1000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Клетка"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Образ жизни дневной"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер спокойный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Хомяк",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "<1000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Клетка"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Образ жизни ночной"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер спокойный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Канарейка",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "<1000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Клетка"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Образ жизни дневной"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер активный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Крыса",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "<1000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Клетка"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Образ жизни ночной"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер активный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Собака",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "1000-5000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Дом или двор"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Наличие необходимости в прогулках"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер активный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Кошка",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "1000-5000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Дом или двор"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Отсутствие необходимости в прогулках"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер активный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Попугай",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "1000-5000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Клетка"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Образ жизни дневной"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер активный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Шиншилла",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "1000-5000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Клетка"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Образ жизни ночной"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер активный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Морская свинка",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "1000-5000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Клетка"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Питание травоядное"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер спокойный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Ежик",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "1000-5000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Клетка"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Питание всеядное"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер спокойный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Черепаха",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "1000-5000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Террариум"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Низкая адаптация"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер спокойный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Хамелеон",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "1000-5000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Террариум"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Высокая адаптация"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер спокойный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Енот",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "5000-10000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Вольер"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Потребность в мобильности"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер активный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Игуана",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "5000-10000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Вольер"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Доступ к пище"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер активный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Паук-птицеед",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "5000-10000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Террариум"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "8 конечностей"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер спокойный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Змея",
+    "connections": [
+      {
+        "type": "requires",
+        "to_node": "5000-10000"
+      },
+      {
+        "type": "is-need",
+        "to_node": "Террариум"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Отсутствие конечностей"
+      },
+      {
+        "type": "has-characteristic",
+        "to_node": "Характер спокойный"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Питомец"
+      }
+    ]
+  },
+  {
+    "value": "Требованием к длине тела",
+    "connections": [
+      {
+        "type": "AKO",
+        "to_node": "Критерии выбора"
+      }
+    ]
+  },
+  {
+    "value": "Требованием к разнообразию",
+    "connections": [
+      {
+        "type": "AKO",
+        "to_node": "Критерии выбора"
+      }
+    ]
+  },
+  {
+    "value": "Требованием к времени",
+    "connections": [
+      {
+        "type": "AKO",
+        "to_node": "Критерии выбора"
+      }
+    ]
+  },
+  {
+    "value": "Требованием к весу",
+    "connections": [
+      {
+        "type": "AKO",
+        "to_node": "Критерии выбора"
+      }
+    ]
+  },
+  {
+    "value": "Требованием к уровню звука",
+    "connections": [
+      {
+        "type": "AKO",
+        "to_node": "Критерии выбора"
+      }
+    ]
+  },
+  {
+    "value": "Требованием к уходу",
+    "connections": [
+      {
+        "type": "AKO",
+        "to_node": "Критерии выбора"
+      }
+    ]
+  },
+  {
+    "value": "Требованием к адаптации",
+    "connections": [
+      {
+        "type": "AKO",
+        "to_node": "Критерии выбора"
+      }
+    ]
+  },
+  {
+    "value": "Требованием к питанию",
+    "connections": [
+      {
+        "type": "AKO",
+        "to_node": "Критерии выбора"
+      }
+    ]
+  },
+  {
+    "value": "Аспект: мобильность/доступ к пище",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Требованием к длине тела"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Потребность в мобильности"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Доступ к пище"
+      }
+    ]
+  },
+  {
+    "value": "Количество конечностей",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Требованием к разнообразию"
+      },
+      {
+        "type": "has-value",
+        "to_node": "8 конечностей"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Отсутствие конечностей"
+      }
+    ]
+  },
+  {
+    "value": "Необходимость в прогулках",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Требованием к времени"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Наличие необходимости в прогулках"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Отсутствие необходимости в прогулках"
+      }
+    ]
+  },
+  {
+    "value": "Образ жизни",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Требованием к весу"
+      },
+      {
+        "type": "IS-A",
+        "to_node": "Требованием к уровню звука"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Образ жизни дневной"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Образ жизни ночной"
+      }
+    ]
+  },
+  {
+    "value": "Простота в уходе",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Требованием к уходу"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Важна простота в уходе"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Не важна простота в уходе"
+      }
+    ]
+  },
+  {
+    "value": "Адаптация",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Требованием к адаптации"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Низкая адаптация"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Высокая адаптация"
+      }
+    ]
+  },
+  {
+    "value": "Питание",
+    "connections": [
+      {
+        "type": "IS-A",
+        "to_node": "Требованием к питанию"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Питание травоядное"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Питание всеядное"
+      }
+    ]
+  },
+  {
+    "value": "Характер",
+    "connections": [
+      {
+        "type": "has-value",
+        "to_node": "Характер активный"
+      },
+      {
+        "type": "has-value",
+        "to_node": "Характер спокойный"
+      }
+    ]
+  },
+  {
+    "value": "Потребность в мобильности"
+  },
+  {
+    "value": "Доступ к пище"
+  },
+  {
+    "value": "8 конечностей"
+  },
+  {
+    "value": "Отсутствие конечностей"
+  },
+  {
+    "value": "Наличие необходимости в прогулках"
+  },
+  {
+    "value": "Отсутствие необходимости в прогулках"
+  },
+  {
+    "value": "Образ жизни дневной"
+  },
+  {
+    "value": "Образ жизни ночной"
+  },
+  {
+    "value": "Важна простота в уходе"
+  },
+  {
+    "value": "Не важна простота в уходе"
+  },
+  {
+    "value": "Низкая адаптация"
+  },
+  {
+    "value": "Высокая адаптация"
+  },
+  {
+    "value": "Питание травоядное"
+  },
+  {
+    "value": "Питание всеядное"
+  },
+  {
+    "value": "Характер активный",
+    "connections": [
+      {
+        "type": "influences",
+        "to_node": "Требованием к длине тела"
+      },
+      {
+        "type": "influences",
+        "to_node": "Требованием к уровню звука"
+      },
+      {
+        "type": "influences",
+        "to_node": "Требованием к времени"
+      },
+      {
+        "type": "influences",
+        "to_node": "Требованием к разнообразию"
+      }
+    ]
+  },
+  {
+    "value": "Характер спокойный",
+    "connections": [
+      {
+        "type": "influences",
+        "to_node": "Требованием к питанию"
+      },
+      {
+        "type": "influences",
+        "to_node": "Требованием к уходу"
+      },
+      {
+        "type": "influences",
+        "to_node": "Требованием к весу"
+      },
+      {
+        "type": "influences",
+        "to_node": "Требованием к адаптации"
+      }
+    ]
+  }
+]
